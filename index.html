@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>TEST server</title>
+	</head>
+	<body>
+		<form method="post" action="http://localhost/registro.php">
+			Nombre:<input type="text" name="nombre"/><br>
+			Correo:<input type="text" name="correo"/><br>
+			Contraseña:<input type="password" name="password"/><br>
+			Género:<br>
+			<input type="radio" name="genero" value="hombre"/>Hombre<br>
+			<input type="radio" name="genero" value="mujer"/>Mujer<br>
+			Escuela:
+			<select name="escuela">
+				<option value="ESCOM" text="Escuela Superior de Cómputo">ESCOM</option>
+				<option value="ESIME" text="Escuela Superior de Ingeniería Mecánica y Eléctrica">ESIME</option>
+				<option value="UPIITA" text="Unidad Profesional interdisciplinaria en Ingeniería y Tecnologías Avanzadas">UPIITA</option>
+				<option value="UPIICSA" text="Unidad Profesional Interdisciplinaria en Ingeniería y Ciencias Sociales">UPIICSA</option>
+			</select>
+			<input type="submit" value="enviar"/>
+		</form>
+	</body>	
+</html>
