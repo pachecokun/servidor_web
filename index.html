@@ -1,23 +1,44 @@
 <html>
 	<head>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<title>TEST server</title>
 	</head>
-	<body>
-		<form method="post" action="http://localhost/registro.php">
-			Nombre:<input type="text" name="nombre"/><br>
-			Correo:<input type="text" name="correo"/><br>
-			Contraseña:<input type="password" name="password"/><br>
-			Género:<br>
-			<input type="radio" name="genero" value="hombre"/>Hombre<br>
-			<input type="radio" name="genero" value="mujer"/>Mujer<br>
-			Escuela:
-			<select name="escuela">
-				<option value="ESCOM" text="Escuela Superior de Cómputo">ESCOM</option>
-				<option value="ESIME" text="Escuela Superior de Ingeniería Mecánica y Eléctrica">ESIME</option>
-				<option value="UPIITA" text="Unidad Profesional interdisciplinaria en Ingeniería y Tecnologías Avanzadas">UPIITA</option>
-				<option value="UPIICSA" text="Unidad Profesional Interdisciplinaria en Ingeniería y Ciencias Sociales">UPIICSA</option>
-			</select>
-			<input type="submit" value="enviar"/>
-		</form>
-	</body>	
+	<body style="background-image: url(https://appcyla.files.wordpress.com/2015/02/m1.jpg);color:#CCCCCC;">
+		<div class="container">
+			<h1>Registro de personas</h1>
+			<form role="form" method="post" action="http://localhost/registro.php">
+				<div class="form-group">
+					<label>Nombre:</label>
+					<input type="text" class="form-control" name="nombre" placeholder="Introduzca su nombre">
+				</div>
+				<div class="form-group">
+					<label>Correo:</label>
+					<input type="email" class="form-control" name="correo" placeholder="Introduzca su e-mail">
+				</div>
+				<div class="form-group">
+					<label>Password:</label>
+					<input type="password" class="form-control" name="password" placeholder="Introduzca su password">
+				</div>
+				<div class="form-group">
+					<label>Género:</label><br>
+					<div class="radio">
+						<label><input type="radio" name="genero" value="hombre"/>Hombre</label><br>
+						<label><input type="radio" name="genero" value="hombre"/>Mujer</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label>Escuela</label><br>
+					<select name="escuela" class="form-control">
+						<option value="ESCOM" text="Escuela Superior de Cómputo">ESCOM</option>
+						<option value="ESIME" text="Escuela Superior de Ingeniería Mecánica y Eléctrica">ESIME</option>
+						<option value="UPIITA" text="Unidad Profesional interdisciplinaria en Ingeniería y Tecnologías Avanzadas">UPIITA</option>
+						<option value="UPIICSA" text="Unidad Profesional Interdisciplinaria en Ingeniería y Ciencias Sociales">UPIICSA</option>
+					</select>
+				</div>
+				<button type="submit" class="btn btn-default">Registrar</button>
+			</form>
+		</div>
+	</body>
 </html>
